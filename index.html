@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css ">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top rounded-bottom">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 d-lg-none">Felipe</span>
+                <img src="./images/profile_pic.jpeg" class="d-none d-lg-block rounded-circle" alt="foto-perfil">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border-0"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- //NAVBAR -->
+
+     <!-- CONTENT WRAPPER -->
+
+     <div id="content-wrapper">
+
+        <!-- HOME -->
+
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 home-content">
+                        <img src="./assets/perfil.jpeg" class="rounded-circle mb-4 d-lg-none img-mobile"
+                            alt="foto-perfil">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up"><span class="text-brand"> FELIPE DA
+                                SILVA</span> DESENVOLVEDOR FRONT-END</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Desenvolvo aplicações web,
+                            sempre fazendo uso de práticas de acessibilidade e com designs responsivos.</p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Meu trabalho</a>
+                            <a href="#" class="link-custom">(92) 98432-5854</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- //HOME -->
+
+        <!-- ABOUT -->
+
+        <section id="about" class="full-height px-lg-5">
+
+            <div class="container home-container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="row pb-3" data-aos="fade-up">
+                            <div class="col-lg-8">
+                                <h6 class="text-brand">SOBRE</h6>
+                                <h1>Quem Eu Sou</h1>
+                            </div>
+                        </div>
+                        <p class="lead mt-2 mb-4 about-text rounded-4 text" data-aos="fade-up" data-aos-delay="300">Olá!
+                            Me chamo Felipe, natural de Manaus-AM e um grande entusiasta em tecnologia. Como alguém que
+                            se importa fielmente com a experiência do usuário, meu objetivo é buscar com que seja
+                            aprimorada cada vez mais. Para isso tomo como fundamental o uso da responsividade e de boas
+                            práticas, assim todos podem ter acesso à informação de forma adequada e confortável. Minhas
+                            habilidade atualmente incluem <span class="skill">HTML</span>, <span
+                                class="skill">CSS</span>,
+                            <span class="skill">JavaScript</span> e <span class="skill">Git</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- //ABOUT -->
+
+        <!-- PROJECTS -->
+
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">PROJETOS</h6>
+                        <h1>Trabalhos Recentes</h1>
+                    </div>
+                </div>
+
+        </section>
+        <!-- //PROJECTS -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTATO</h6>
+                        <h1>Ficou interessado em uma parceria? Mande uma mensagem!
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="https://formsubmit.co/fedevs.so@gmail.com" method="POST" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" name="subject" class="form-control" placeholder="Assunto">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" rows="4" class="form-control" placeholder="Sua mensagem"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Enviar</button>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://fesofeng.github.io/portfolio-page/#home">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between footer">
+                    <div class="col-auto">
+                        <p class="mb-0">Feito por mim, com a ajuda de <a href="#" class="fw-bold">SA7MAN</a>.</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://github.com/fesofeng"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/felipe-da-silva-71212320b"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+    <script src="https://kit.fontawesome.com/f296a75e9c.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
