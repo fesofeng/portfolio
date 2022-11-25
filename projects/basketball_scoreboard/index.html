@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+
+    <link rel="icon" href="./images/basketball_icon.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <main>
+
+        <h3 id="app-name">Basketball Scoreboard</h3>
+
+        <div id="board-container">
+            <div id="home">
+                <h1>Home</h1>
+                <div class="count-space">
+                    <h2 class="scored-points" id="scored-points-home">0</h2>
+                </div>
+                <div class="increment-btns">
+                    <button class="add1" onclick="add1Home()">+1</button>
+                    <button class="add2" onclick="add2Home()">+2</button>
+                    <button class="add3" onclick="add3Home()">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h1>Guest</h1>
+                <div class="count-space">
+                    <h2 class="scored-points" id="scored-points-guest">0</h2>
+                </div>
+                <div class="increment-btns">
+                    <button class="add1" onclick="add1Guest()">+1</button>
+                    <button class="add2" onclick="add2Guest()">+2</button>
+                    <button class="add3" onclick="add3Guest()">+3</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="reset-btn" onclick="resetScore()">Reset</button>
+        
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Silkscreen', cursive;    
+}
+
+body {
+    background-color: #1B244A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161d3d;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid 0.3rem #F94F6D;
+}
+
+h1 {
+    padding-bottom: 0.8rem;
+}
+
+#home, #guest {
+    text-align: center;
+}
+
+#board-container {
+    display: flex;
+    gap: 5.5rem;
+}
+
+h1, h2 {
+    color: #ddd;
+}
+
+.scored-points {
+    color: #F94F6D;
+    font-size: 4.2rem;
+}
+
+.count-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080001;
+    border-radius: 0.3rem;
+    width: 9.375rem;
+    height: 7.5rem;
+}
+
+.increment-btns {
+    padding-top: 1rem;
+}
+
+.add1, .add2, .add3 {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1B244A;
+    outline: none;
+    border-radius: 0.3rem;
+    color: #9AABD8;
+    border: 3px solid #9AABD8;
+    box-shadow: none;
+}
+
+.add1:hover, .add2:hover, .add3:hover {
+    background-color: #303962;
+}
+
+#reset-btn {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    width: 8.5rem;
+    height: 3rem;
+    border: 3px solid #9AABD8;
+    background-color: #1B244A;
+    color: #9AABD8;
+    border-radius: 0.3rem;
+}
+
+#reset-btn:hover {
+    background-color: #303962;
+}
+
+#app-name {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width:950px) {
+
+    body {
+        height: 100vh;
+        width: auto;
+    }
+
+    main {
+        margin: 1px;
+    }
+
+    #board-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+    body {
+        width: auto;
+        height: auto;
+    }
+
+    #board-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #app-name {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+   
+}
