@@ -1,0 +1,15 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+
+$custom-colors: (
+  "first-color": #171c2d,
+  "second-color": #254252,
+  "third-color": #e37239,
+  "fourth-color": #f9982f,
+  "fifth-color": #eab56f,
+  "sixth-color": #ccc
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "./node_modules/bootstrap/scss/bootstrap";
